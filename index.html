@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SnowGlobes</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Our process combines the skills, knowledge, and language of your sales and marketing teams with our expertise in user experience design to create the most compelling path for a visitor.">
+  <meta name="language" content="English">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Digital Marketing Design Services | KingDesignLLC.com</title>
+
+  <!-- Typography.com -->
+  <link rel="stylesheet" type="text/css" href="snowstyle.css">
+
+  <!--Favicons -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="King Design Snowglobe">
+<meta itemprop="description" content="Happy Holidays! Shake things up with the King Design Snowglobe.">
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="http://kingdesignllc.com/wp-content/themes/king_design/assets/js/third_party/modernizr.custom.32290.js"></script>
+  <![endif]--></head>
+		
+	<body class="snowglobe">
+		
+
+			<div class="foreground">
+				<div class="globesbottom">
+				<h2>&nbsp;</h2>
+						<h3> <center><span><h2 class="animated fadeInDown" style="font-family: 'proxima-nova', sans-serif; color: #fff; font-weight: 300; line-height: 20px;  letter-spacing: 5px; text-transform: uppercase">May your season Sparkle </h2><!--<h1 class="christmas">sparkle</h1>--></span>
+                    <h2 class="animated fadeInDown `delay-1s" style="font-family: 'proxima-nova', sans-serif; color: #ffffff; font-weight: 300; line-height: 20px; letter-spacing: 8px; text-transform: uppercase">From sea to shining sea.</h2></center></h3>
+				</div>
+				<div class="globecontainer">
+					
+					<div id="globeone" class="globe">
+						
+					</div>
+				</div>
+				
+				 
+                        
+				<div class="globecontainer">
+				
+                      
+                  
+					<div id="globetwo" class="globe globe2">
+						<img src="http://www.crystalcruises.com/docs/default-source/2018-holiday-globe/seahorse-updated.svg?sfvrsn=ef654693_2" class="teaser">
+						<img src="http://hamptoncreative.com/clients/rc/snow/globe.svg" class="globe-img" onclick="shakeItUp(this,8000);">
+						<canvas id="canvastwo" class="canvas" width="800" height="800"></canvas>
+						
+					</div>
+					
+				</div>
+				
+				<div class="globecontainer">
+					
+				</div>
+					
+				
+				
+				
+				
+				
+				<div class="globesbottom">
+					<center><h4 class="animated fadeInDown delay-4s" style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';color: #A1A1A1; line-height: 10px; ">Click globe to shake</h4><h2 class="animated fadeInDown delay-2s" style="font-family: 'proxima-nova', sans-serif; color: #fff; font-weight: 300; line-height: 20px; letter-spacing: 8px; text-transform: uppercase">A world of holiday wishes,</h2>
+                        
+                     <h2 class="animated fadeInDown delay-3s" style="font-family: 'proxima-nova', sans-serif; color: #fff; font-weight: 300; line-height: 20px; letter-spacing: 8px; text-transform: uppercase ">From your Crystal family.</h2><h2>&nbsp;</h2></center>
+				</div>
+			</div>
+		
+			<div class="shakeit"></div>
+			<div class="shakeit"></div>
+
+<script src="shake.js"></script>		
+<script src="snow.js"></script>
+<script>
+// Globe animation
+$(".globe").on('click', function(e) {
+	$(this).addClass('animated tada');
+	this.snows.shake();
+	
+});
+$(".globe").on("webkitAnimationEnd oanimationend msAnimationEnd animationend",
+    function() {
+        $(this).removeClass("animated tada");
+    }
+);
+
+
+// Shake the globe using a device with an accelerometer
+var myShakeEvent = new Shake({
+    threshold: 30 // optional shake strength threshold
+});
+
+// start listening to device motion
+myShakeEvent.start();
+window.addEventListener('shake', shakeEvent, false);
+function shakeEvent() {
+	snowShow.shake();
+	$('.globe').click();
+}
+
+</script>
+
+	</body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
